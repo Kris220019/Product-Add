@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Product Add</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+	<br>
+	<div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+		<div class="header">
+		Product Add
+		</div>
+		<form action="/action_page.php" onsubmit="return validateForm()" method="post">
+			<input type="submit" value="Save">
+	  </div>
+<hr>
+<div class="card1">
+	<div class="card-body">
+		<div class="form-group row">
+			<label for="SKU" class="label"><span class="col-sm-2 col-form-label required" >*</span>SKU:</label>
+				<input type="text" id="SKU" name="SKU" required >
+	</div>
+  </div>
+  <div class="card2">	
+	<div class="card-body">
+		<div class="form-group row">		
+				<label for="name" class="label"><span class="col-sm-2 col-form-label required" >*</span>Name:</label>
+				<input type="text" id="name" name="name" required >
+	</div>
+  </div>
+  <div class="card3">
+	<div class="card-body">
+		<div class="form-group row">		
+			<label for="price" class="label"><span class="col-sm-2 col-form-label required" >*</span>Price:</label>
+			<input type="text" id="price" name="price" required >
+	</div>
+  </div> 
+   <div class="card4">
+	<div class="card-body">
+		<div class="form-group row">
+			<label for="Price" class="col-sm-2 col-form-label">Type Switcher</label>
+			<div class="col-sm-10">
+		<div class="btn-group" role="group">
+			<button type="button" class="btn btn-outline-dark" id="dropdownButton">
+				Type Switcher
+			</button>
+			<button
+			  type="button"
+			  id="typeSwitcher"
+			  class="btn btn-outline-dark dropdown-toggle dropdown-toggle-split"
+			  data-toggle="dropdown"
+			  aria-haspopup="true"
+			  aria-expanded="false"
+			>
+			  <span class="sr-only">Type Switcher</span>
+			</button>
+			<div class="dropdown-menu">
+			  <a class="dropdown-item" href="#" id="DVDdisc">DVD-disc</a>
+			  <a class="dropdown-item" href="#" id="book">Book</a>
+			  <a class="dropdown-item" href="#" id="furniture">Furniture</a>
+			</div>
+		  </div>
+		 </div> 
+	</div>
+  </div>
+  <div class="card" style="width: 500px; height: 170px; margin-top: 20px;">
+	<div class="card-body" id="cardBody">	
+		<div class="card-specialAttribute hidden" id="sizeSpecialAttribute">
+			<div class="card-body-specialAttribute">
+				<div class="form-group row" id="groupSpecialAttribute">
+					<label for="size" class="label"><span class="col-sm-2 col-form-label required" >*</span>Size:</label>
+			<input type="text" id="size" name="size"   >
+			</div>
+			<p class="fotter">
+				<small class="fotter-specialAttribute">Please, provide size in MB format</small>
+			</p>
+		  </div>
+		</div>
+		  <div class="card-specialAttribute hidden" id="weightSpecialAttribute" >
+			<div class="card-body-specialAttribute">
+				<div class="form-group row" id="groupSpecialAttribute">
+					<label for="weight" class="label"><span class="col-sm-2 col-form-label required" >*</span>Weight:</label>
+			<input type="text" id="weight" name="weight" >
+			</div>
+		</p class="fotter">
+				<small class="fotter-specialAttribute">Please, provide weight in KG format</small>
+			</p>
+		  </div>
+</div>
+		  <div class="card-specialAttribute hidden" id="heightWidthLengthSpecialAttribute">
+			<div class="card-body-specialAttribute">
+				<div class="form-group row" id="groupSpecialAttribute">
+					<label for="height" class="label"><span class="col-sm-2 col-form-label required" >*</span>Height:</label>
+					<input type="text" id="height" name="height"  class="inputHeight">	
+			</div>
+			<br>
+			<div class="form-group row" id="groupSpecialAttribute">
+				<label for="width" class="label"><span class="col-sm-2 col-form-label required" >*</span>Width:</label>
+					<input type="text" id="width" name="width"  >
+		</div>
+		<br>
+		<div class="form-group row" id="groupSpecialAttribute">
+			<label for="length" class="label"><span class="col-sm-2 col-form-label required" >*</span>Length:</label>
+					<input type="text" id="length" name="length"  >	
+	</div>
+		<p class="fotter">
+				<small class="fotter-specialAttribute">Please, provide dimensions in HxWxL format</small>
+			</p>
+		  </div>
+		  </div>
+		</form>
+</div>
+</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</body>

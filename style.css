@@ -1,0 +1,73 @@
+.header {
+  font-size: 1.7em;
+  font-family: Noto Sans, sans-serif;
+}
+
+.content {
+  margin-left: 0.95rem;
+  text-align: center;
+}
+
+.card1 {
+  border: transparent;
+}
+
+.form-control {
+  width: 20%;
+  margin-left: -60px;
+}
+
+.card-body {
+  padding: 0px;
+}
+
+.card-description {
+  border-width: 3px;
+}
+
+.card-body-specialAttribute {
+  padding-left: 5px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.card-specialAttribute {
+  width: 250%;
+}
+
+.fotter-specialAttribute {
+  font-size: 0.7em;
+  font-family: Noto Sans, sans-serif;
+}
+
+#groupSpecialAttribute {
+  margin-bottom: -10px;
+}
+
+#heigtSpecialAttribute {
+  margin-bottom: 7px;
+}
+
+#widthSpecialAttribute {
+  margin-bottom: 7px;
+}
+
+.required {
+  color: red;
+}
+
+.label {
+  width: 10%;
+}
+
+.hidden {
+  display: none;
+}
+
+.fotter {
+  margin-top: 10px;
+}
+
+.class {
+  margin-bottom: 10px;
+}
